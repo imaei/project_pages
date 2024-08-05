@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Reflective Instruction Tuning</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">ARIO: A Scaling Up Embodied AI Dataset Containing Multiple Types of Agents and Perceptual Modalities</h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Pengcheng Laboratory, Agilex Robotics,</span>
+              <br>
+              <span class="author-block">Sun Yat-sen University,</span>
+              <br>
+              <span class="author-block">Southern University of Science and Technology,</span>
+              <br>
+              <span class="author-block">The University of Hong Kong, The Chinese University of Hong Kong,</span>
+              <br>
+              <span class="author-block">The Chinese University of Hong Kong,</span>
+              <br>
+              <span class="author-block">Technical University of Munich,</span>
+              <br>
+              <span class="author-block">Dataa Robotics, D-Robotics, JD Technology</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="https://openi.pcl.ac.cn/ARIO"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span>Dataset</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/reflective_instruction_tuning.png" alt="MY ALT TEXT" />
+        <div class="content has-text-justified">
+          <p>
+            <b>Reflective Instruction Tuning.</b> Vanilla instruction tuning only trains LVLMs solely for response
+            generation, lacking of supervising the learning of fine-grained reasoning details. Reflective instruction
+            tuning additionally trains model to reflect the rationale underlying the response, which provide more
+            fine-grained supervision (\eg, the key visual evidence and facts to reach the response, highlighted in red),
+            facilitate the model learning to capture more critical information.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              In the current stage of AI development, large models have become the dominant force, and data has become the decisive factor. Whether it is a large language model or a visual language model, it can be trained with massive data obtained from the Internet. However, the data for the large model of embodied AI cannot be directly obtained through the Internet, but can only be collected by real robot scenes or generated by simulation environment. Compared to the trillion-level of text data, it is difficult for embodied AI datasets to reach the scale of millions. ARIO (All Robots In One), an open source scaling up dataset in the field of embodied AI, was created and co-built by joint efforts to address the scarcity of data. According to the experience of LLMs, training large models requires not only the large amount of data, but also high quality and rich diversity. We designed a unified format for the ARIO dataset, and its each collection contains a yaml file to specify the specific content, so that various types of robots, such as humanoid, single-armed, bimanual, navigational, and various control variables, such as position, attitude angle, joint angle, speed, torque, can all be stored and efficiently processed. ARIO is stored and managed through the structure of series - task - episode - data with timestamps, which is clear for users and easy for statistics. All in all, ARIO has a well-designed format that is compatible with recording multiple types of robot data, and can be efficiently managed and processed, and has a rich variety of nearly 3.4 million samples.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+  <!-- Dataset Collection pipeline -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <!-- Paper pipeline. -->
+            <h2 class="title is-3">Data collection pipeline</h2>
+            <div class="content has-text-justified">
+              <p>
+                <b>ARIO data comes from three main sources: conversion from open source datasets, generation from simulation platforms, and acquisition of real-world robot scenarios.
+              </p>
+            </div>
+            <img src="static/images/pipeline.png" alt="MY ALT TEXT" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Model -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the of this website, we just ask that you link back to this page in the footer.
+              <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
