@@ -71,41 +71,41 @@
               <span class="author-block">Jinrui Zhang<sup>2</sup>,</span>
               <span class="author-block">Xuewen Cheng<sup>1</sup>,</span>
               <span class="author-block">Wanxi Dong<sup>2</sup>,</span>
-              <span class="author-block">Chang Cai<sup>1</sup></span>
+              <span class="author-block">Chang Cai<sup>1</sup>,</span>
               <span class="author-block">Tingting Shen<sup>2</sup>,</span>
-              <span class="author-block">Zhen Luo<sup>2</sup></span>
+              <span class="author-block">Zhen Luo<sup>2</sup>,</span>
               <span class="author-block">Fangjing Wang<sup>2</sup>,</span>
               <span class="author-block">Zesheng Yang<sup>2</sup>,</span>
               <span class="author-block">Liang Xu<sup>2</sup>,</span>
               <span class="author-block">Yi Yan<sup>2</sup>,</span>
               <span class="author-block">Yixuan Yang<sup>2</sup>,</span>
-              <span class="author-block">Jingnan Luo<sup>2</sup></span>
+              <span class="author-block">Jingnan Luo<sup>2</sup>,</span>
               <span class="author-block">Tongsheng Ding<sup>2</sup>,</span>
-              <span class="author-block">Ziwei Chen<sup>2</sup></span>
+              <span class="author-block">Ziwei Chen<sup>2</sup>,</span>
               <span class="author-block">Guoyu Xiong<sup>2</sup>,</span>
               <span class="author-block">Xi Jiang<sup>2</sup>,</span>
               <span class="author-block">Tiantian Geng<sup>2</sup>,</span>
               <span class="author-block">Zhenhong Guo<sup>2</sup>,</span>
-              <span class="author-block">Xue Jiang<sup>2</sup></span>
+              <span class="author-block">Xue Jiang<sup>2</sup>,</span>
               <span class="author-block">Zhengyu Lin<sup>2</sup>,</span>
-              <span class="author-block">Ziling Liu<sup>2</sup></span>
+              <span class="author-block">Ziling Liu<sup>2</sup>,</span>
               <span class="author-block">Junfan Lin<sup>1</sup>,</span>
               <span class="author-block">Qingyong Jia<sup>1</sup>,</span>
               <span class="author-block">Yazhan Zhang<sup>1</sup>,</span>
               <span class="author-block">Jichang Li<sup>1</sup>,</span>
-              <span class="author-block">Bingyi Xia<sup>2</sup></span>
+              <span class="author-block">Bingyi Xia<sup>2</sup>,</span>
               <span class="author-block">Jingyi Liu<sup>2</sup>,</span>
               <span class="author-block">Shiwei Zhang<sup>3</sup>,</span>
               <span class="author-block">Yun Pei<sup>3</sup>,</span>
-              <span class="author-block">Yao Xiao<sup>3</sup></span>
+              <span class="author-block">Yao Xiao<sup>3</sup>,</span>
             </div>
             <br>
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Research Institute of Multiple Agents and Embodied Intelligence, Peng Cheng Laboratory</span>
+              <span class="author-block"><sup>1</sup>Research Institute of Multiple Agents and Embodied Intelligence, Peng Cheng Laboratory,<br>(鹏城实验室多智能体与具身智能研究所)</span>
               <br>
-              <span class="author-block"><sup>2</sup>Southern University of Science and Technology,</span>
+              <span class="author-block"><sup>2</sup>Southern University of Science and Technology,<br>(南方科技大学)</span>
               <br>
-              <span class="author-block"><sup>3</sup>Sun Yat-sen University</span>
+              <span class="author-block"><sup>3</sup>Sun Yat-sen University<br>(中山大学)</span>
             </div>
 
             <div class="is-size-5 publication-authors">
@@ -194,7 +194,7 @@
             <h2 class="title is-3">The ARIO Dataset</h2>
             <div class="content has-text-justified">
               <p>
-                <b>The ARIO dataset comprises approximately 3 million episodes collected from 258 series and 321,064 tasks. The ARIO standard and dataset represent a significant step towards bridging the gaps of existing data resources. By providing a cohesive framework for data collection and representation, ARIO paves the way for the development of more powerful and versatile embodied AI agents, capable of navigating and in teracting with the physical world in increasingly complex and diverse ways.
+                <b>Comparison between ARIO dataset and other open source embodied datasets</b>
               </p>
             </div>
             <img src="static/images/comparison.png" style="width: 100%; height: auto;" />
@@ -236,11 +236,22 @@
             <h2 class="title is-3">Statistics</h2>
             <div class="content has-text-justified">
               <p>
-                <b>Statistics on Scenes and Skills in the ARIO Dataset</b> In addition to scenes and skills, in the ARIO data, we can also carry out statistical analysis from the perspective of the robot itself, and learn some of the current developments in the robot industry. We provide statistical data of morphologies, motion objects, physical variables, sensors, sensor positions, camera(RGBD) numbers, proportion of control methods, proportion of operation modes, proportion of arm joint numbers, corresponding to Figure a-i below. As shown in Figure a below, it can be found that most of the current data comes from single-armed robots, while the open source data volume of humanoid robots is very small and mainly comes from our real scenario collection and simulation generation.
+                Statistics of the ARIO Dataset
               </p>
             </div>
-            <img src="static/images/statistic1.png" alt="MY ALT TEXT" /><br>
+            <img src="static/images/statistic.png" alt="MY ALT TEXT" style="width: 80%; height: auto;" />
+            <div class="content has-text-justified">
+              <p>
+                <b>Statistics on Scenes and Skills in the ARIO Dataset.</b> Thanks to the uniform format design of ARIO data, we can easily perform statistical analysis of its data composition. The following figure shows the statistical distribution of ARIO's scenes (Figure a) and skills (Figure b) in three levels: series, task, and episode. It can be seen that most of the present embodied data is focused on the scenes and skills in the indoor living house environment.
+              </p>
+            </div>
             <img src="static/images/statistic2.jpg" alt="MY ALT TEXT" />
+            <div class="content has-text-justified">
+              <p>
+                In addition to scenes and skills, in the ARIO data, we can also carry out statistical analysis from the perspective of the robot itself, and learn some of the current developments in the robot industry. We provide statistical data of morphologies, motion objects, physical variables, sensors, sensor positions, camera(RGBD) numbers, proportion of control methods, proportion of operation modes, proportion of arm joint numbers, corresponding to Figure a-i below. As shown in Figure a below, it can be found that most of the current data comes from single-armed robots, while the open source data volume of humanoid robots is very small and mainly comes from our real scenario collection and simulation generation.
+              </p>
+            </div>
+            <img src="static/images/statistic1.png" alt="MY ALT TEXT" />
           </div>
         </div>
       </div>
@@ -267,8 +278,9 @@
     </div>
   </section>
 
-<section>
-    <div class="hero is-small">
+<section class="section hero is-light">
+    <div class="hero-body">
+      <div class="container">
       <div class="video-grid">
         <div class="video-container">
           <video controls>
@@ -302,6 +314,7 @@
         </div>
       </div>
     </div>
+  </div>
   </section>
 
   <section class="section" id="BibTeX">
